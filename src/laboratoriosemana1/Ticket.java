@@ -16,10 +16,10 @@ public class Ticket {
     private boolean esPalindromo;
     
     public Ticket(String Name, double FinalAmount, double OriginalAmount, boolean isPalindrome){
-        this.Nombre=Nombre;
-        this.montoOriginal=montoOriginal;
-        this.montoPagado=montoPagado;
-        this.esPalindromo=esPalindromo;
+        this.Nombre=Name;
+        this.montoOriginal=FinalAmount;
+        this.montoPagado=OriginalAmount;
+        this.esPalindromo=isPalindrome;
     }
 
     public String getNombre() {

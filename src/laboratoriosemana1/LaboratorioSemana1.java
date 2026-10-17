@@ -31,7 +31,7 @@ import javax.swing.SwingUtilities;
  * 
  * @author mario
  */
-public class Laboratoriosemana1 extends JFrame {
+public class LaboratorioSemana1 extends JFrame {
 
     private final PalindromoAir avion = new PalindromoAir();
     private final JButton[] botonesAsientos = new JButton[PalindromoAir.CAPACIDAD];
@@ -47,7 +47,7 @@ public class Laboratoriosemana1 extends JFrame {
     private int asientoSeleccionado = -1;
     private int asientoResaltado = -1;
 
-    public Laboratoriosemana1() {
+    public LaboratorioSemana1() {
         setTitle("PalindromoAir - Venta y Control de Boletos");
         setSize(1050, 720);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -266,6 +266,6 @@ public class Laboratoriosemana1 extends JFrame {
     }
 
     public static void main(String[] args) {
-        SwingUtilities.invokeLater(() -> new Laboratoriosemana1().setVisible(true));
+        SwingUtilities.invokeLater(() -> new LaboratorioSemana1().setVisible(true));
     }
 }
